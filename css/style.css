@@ -1,0 +1,381 @@
+/* common css start */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.container {
+  width: 1170px;
+  margin: auto
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* //common css end */
+
+
+/* preloader */
+#preloader{
+  position: fixed;
+  background: #fbf1f1;
+  inset: 0;
+  z-index: 99999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #preloader .frame  {
+  background: rgb(7, 226, 91);
+width: 50px;
+height: 100px;
+  display: inline-block;
+  margin: 0px 5px;
+  border: 2px solid #0077ff;
+  border-radius: 80%;
+  animation-name: preloader;
+  animation-duration:2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ 
+} */
+
+/* #preloader .frame span {
+  background: rgb(226, 7, 7);
+
+  display: inline-block;
+  margin: 0px 5px;
+  border: 2px solid #0077ff;
+  border-radius: 20%;
+  animation-name: preloader;
+  animation-duration:1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: bottom;
+}
+
+#preloader .frame span:nth-child(1){
+  animation-delay: 3s;
+ 
+  width: 30px;
+  height: 40px;
+  background: #ffa500;
+  
+}
+#preloader .frame span:nth-child(2){
+  animation-delay: 3s;
+ 
+  width: 30px;
+  height: 40px;
+  background: #ffa500;
+  
+}
+#preloader .frame span:nth-child(3){
+  animation-delay: 3s;
+ 
+  width: 30px;
+  height: 40px;
+  background: #ffa500;
+  
+}
+
+#preloader .frame span:last-child{
+  animation-delay: 2s;
+ 
+  width: 30px;
+  height: 40px;
+  color:#ffa500 ;
+  position: absolute;
+  left: 50%;
+}
+
+
+
+@keyframes preloader{
+  from{
+    transform:rotate(0deg) ;
+   
+  }
+  to{
+    transform:rotate(360deg);
+  
+  }
+} */
+/* //prteloader */
+/* header section start */
+header {
+  background-color: #0f2f44;
+  color: #c2cacf;
+}
+
+/* header section end */
+
+/* //nav section start */
+
+#navigation {
+  background-color: #ffffff;
+}
+
+#navigation div.row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navigation img {
+  display: block;
+}
+
+#navigation ul li a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700px;
+  padding: 22px 19px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: .7s;
+}
+
+nav ul li:hover a {
+  background-color: #fff9e6;
+  color: #ffc712;
+  border-radius: 20px;
+  transition: .7s;
+
+}
+
+/* //nav section end */
+/* //banner section start */
+#banner .banner_slider .banner_slider_arrow{
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(231, 154, 10);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: .4s;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  color:white;
+  transform: translateY(-50%)
+}
+#banner .banner_slider .banner_slider_arrow.fa-arrow-left{
+  left: 10px;
+}
+#banner .banner_slider .banner_slider_arrow.fa-arrow-right{
+  right: 10px;
+}
+#banner .banner_slider .banner_slider_arrow:hover{
+  background: rgb(231, 154, 10);
+  border-radius: 50%;
+}
+
+#banner .banner_slider_item{
+  background-size: cover !important;
+  background-position: center !important;
+  height: 550px;
+  position: relative;
+
+}
+
+
+
+
+#banner .container {
+  height: 100%;
+}
+
+#banner div.row {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+#banner .banner_content {
+  width: 100%;
+}
+
+#banner h1 {
+  color: #0f2f44;
+  font-size: 80px;
+  font-weight: 400px;
+  text-transform: uppercase;
+}
+
+#banner h3 {
+  color: #0f2f44;
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#banner h4 {
+  color: #8484bf;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#banner p {
+  color: #444444;
+  font-size: 14px;
+  width: 465px;
+  padding: 16px 0;
+}
+
+#banner a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400px;
+  text-transform: uppercase;
+  background-color: #8484bf;
+  padding: 10px 10px;
+  display: inline-block;
+}
+
+#banner i {
+  font-size: 30px;
+  padding: 0 20px;
+
+}
+
+/* //banner section end */
+/* about section start */
+
+
+
+#about .about_item{
+  width: 50%;
+}
+
+#about .about_item h5 {
+  color: #0f2f44;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#about .about_item h3 {
+  color: #0f2f44;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#about .about_item p {
+  color: #0f2f44;
+  font-size: 16px;
+  width: 569px;
+  padding: 18px 0;
+}
+
+#about .about_item pre {
+
+  color: #0f2f44;
+  font-family: Open Sans;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+#about .about_item a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400px;
+  text-transform: uppercase;
+  background-color: #ffc712;
+  color: #0f2f44;
+  padding: 10px 10px;
+  display: inline-block;
+
+}
+
+#about .about_item span {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #0f2f44;
+  padding: 10px 10px;
+
+}
+#about .right{
+  width: 50%;
+}
+/* //banner section end */
+/* skill section start */
+#skill .right{
+  width: 60%;
+
+ 
+}
+#skill .skill_item{
+  width: 40%;
+  text-align: right;
+}
+#skill  .photoshop{
+  background-color: #f2f2f1;
+  width: 559px;
+  margin-bottom: 50px;
+
+}
+/* //skill section end */
+
+/* service section start */
+
+#service .service_info h5 {
+  color: #0f2f44;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+  margin: auto;   
+}
+#service .service_info h3 {
+  color: #0f2f44;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  
+}
+#service .row{
+  justify-content: center;
+  align-items: center;
+}
+#service .service_item{
+  width: 33.33%;
+}
+/* //service section end */
+
+
+
+
+
+
